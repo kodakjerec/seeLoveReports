@@ -53,6 +53,7 @@
     <DataSource Include="192_168_1_210_seelove100.rds" />
   </ItemGroup>
   <ItemGroup>
+    <Report Include="reports_Bonus1.rdl" />
     <Report Include="reports_Employees.rdl" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Reporting Services\Microsoft.ReportingServices.MSBuilder.targets" />

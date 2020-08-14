@@ -94,7 +94,7 @@
             </Paragraphs>
             <rd:DefaultName>textbox1</rd:DefaultName>
             <Height>0.43in</Height>
-            <Width>9in</Width>
+            <Width>11.7in</Width>
             <Style>
               <PaddingLeft>2pt</PaddingLeft>
               <PaddingRight>2pt</PaddingRight>
@@ -106,28 +106,28 @@
             <TablixBody>
               <TablixColumns>
                 <TablixColumn>
-                  <Width>0.4375in</Width>
+                  <Width>0.775in</Width>
                 </TablixColumn>
                 <TablixColumn>
-                  <Width>1.41667in</Width>
+                  <Width>1.75417in</Width>
                 </TablixColumn>
                 <TablixColumn>
-                  <Width>1in</Width>
+                  <Width>1.3375in</Width>
                 </TablixColumn>
                 <TablixColumn>
-                  <Width>1in</Width>
+                  <Width>1.3375in</Width>
                 </TablixColumn>
                 <TablixColumn>
-                  <Width>1in</Width>
+                  <Width>1.3375in</Width>
                 </TablixColumn>
                 <TablixColumn>
-                  <Width>2.14583in</Width>
+                  <Width>2.48333in</Width>
                 </TablixColumn>
                 <TablixColumn>
-                  <Width>1in</Width>
+                  <Width>1.3375in</Width>
                 </TablixColumn>
                 <TablixColumn>
-                  <Width>1in</Width>
+                  <Width>1.3375in</Width>
                 </TablixColumn>
               </TablixColumns>
               <TablixRows>
@@ -716,7 +716,7 @@
             <DataSetName>reports_Employees</DataSetName>
             <Top>0.43in</Top>
             <Height>0.43in</Height>
-            <Width>9in</Width>
+            <Width>11.7in</Width>
             <ZIndex>1</ZIndex>
             <Style />
           </Tablix>
@@ -724,7 +724,7 @@
         <Height>0.86in</Height>
         <Style />
       </Body>
-      <Width>9in</Width>
+      <Width>11.7in</Width>
       <Page>
         <PageHeight>8.27in</PageHeight>
         <PageWidth>11.69in</PageWidth>
