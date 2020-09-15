@@ -54,6 +54,9 @@
   </ItemGroup>
   <ItemGroup>
     <Report Include="reports_Bonus1.rdl" />
+    <Report Include="reports_Bonus2.rdl" />
+    <Report Include="reports_Certificate1ToExcel.rdl" />
+    <Report Include="reports_Certificate2ToExcel.rdl" />
     <Report Include="reports_Employees.rdl" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Reporting Services\Microsoft.ReportingServices.MSBuilder.targets" />
