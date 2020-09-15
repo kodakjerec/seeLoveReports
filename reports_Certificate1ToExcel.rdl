@@ -20,6 +20,9 @@
           <QueryParameter Name="@locale">
             <Value>=Parameters!locale.Value</Value>
           </QueryParameter>
+          <QueryParameter Name="@reportDuration">
+            <Value>=Parameters!reportDuration.Value</Value>
+          </QueryParameter>
         </QueryParameters>
         <CommandType>StoredProcedure</CommandType>
         <CommandText>reports_Certificate1ToExcel</CommandText>
@@ -35,7 +38,7 @@
         </Field>
         <Field Name="CreateDate">
           <DataField>CreateDate</DataField>
-          <rd:TypeName>System.DateTime</rd:TypeName>
+          <rd:TypeName>System.String</rd:TypeName>
         </Field>
         <Field Name="StatusName">
           <DataField>StatusName</DataField>
@@ -43,6 +46,10 @@
         </Field>
         <Field Name="CustomerName">
           <DataField>CustomerName</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="durationText">
+          <DataField>durationText</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
       </Fields>
@@ -302,29 +309,7 @@
               <Paragraph>
                 <TextRuns>
                   <TextRun>
-                    <Value>VĨNH VIỄN (Giới hạn tầng </Value>
-                    <Style>
-                      <FontStyle>Normal</FontStyle>
-                      <FontFamily>Times New Roman</FontFamily>
-                      <FontSize>16pt</FontSize>
-                      <FontWeight>Normal</FontWeight>
-                      <TextDecoration>None</TextDecoration>
-                      <Color>#000000</Color>
-                    </Style>
-                  </TextRun>
-                  <TextRun>
-                    <Value>3.3A.8.9</Value>
-                    <Style>
-                      <FontStyle>Normal</FontStyle>
-                      <FontFamily>微軟正黑體</FontFamily>
-                      <FontSize>16pt</FontSize>
-                      <FontWeight>Normal</FontWeight>
-                      <TextDecoration>None</TextDecoration>
-                      <Color>#000000</Color>
-                    </Style>
-                  </TextRun>
-                  <TextRun>
-                    <Value>)</Value>
+                    <Value>=Split(First(Fields!durationText.Value, "reports_Certificate1ToExcel").ToString(),Chr(10))(0)</Value>
                     <Style>
                       <FontStyle>Normal</FontStyle>
                       <FontFamily>Times New Roman</FontFamily>
@@ -337,54 +322,11 @@
                 </TextRuns>
                 <Style />
               </Paragraph>
-              <Paragraph>
-                <TextRuns>
-                  <TextRun>
-                    <Value>永久使用權 (限選層別</Value>
-                    <Style>
-                      <FontStyle>Normal</FontStyle>
-                      <FontFamily>標楷體</FontFamily>
-                      <FontSize>16pt</FontSize>
-                      <FontWeight>Normal</FontWeight>
-                      <TextDecoration>None</TextDecoration>
-                      <Color>#000000</Color>
-                    </Style>
-                  </TextRun>
-                  <TextRun>
-                    <Value>3.3A.8.9</Value>
-                    <Style>
-                      <FontStyle>Normal</FontStyle>
-                      <FontFamily>微軟正黑體</FontFamily>
-                      <FontSize>16pt</FontSize>
-                      <FontWeight>Normal</FontWeight>
-                      <TextDecoration>None</TextDecoration>
-                      <Color>#000000</Color>
-                    </Style>
-                  </TextRun>
-                  <TextRun>
-                    <Value>層)</Value>
-                    <Style>
-                      <FontStyle>Normal</FontStyle>
-                      <FontFamily>標楷體</FontFamily>
-                      <FontSize>16pt</FontSize>
-                      <FontWeight>Normal</FontWeight>
-                      <TextDecoration>None</TextDecoration>
-                      <Color>#000000</Color>
-                    </Style>
-                  </TextRun>
-                </TextRuns>
-                <LeftIndent>0cm</LeftIndent>
-                <RightIndent>0cm</RightIndent>
-                <Style>
-                  <TextAlign>Left</TextAlign>
-                  <LineHeight>20pt</LineHeight>
-                </Style>
-              </Paragraph>
             </Paragraphs>
             <rd:DefaultName>Textbox5</rd:DefaultName>
             <Top>9.42cm</Top>
             <Left>3.86cm</Left>
-            <Height>2.7cm</Height>
+            <Height>0.98736cm</Height>
             <Width>10.61cm</Width>
             <ZIndex>6</ZIndex>
             <Style>
@@ -397,8 +339,48 @@
               <PaddingBottom>0.13cm</PaddingBottom>
             </Style>
           </Textbox>
+          <Textbox Name="Textbox8">
+            <CanGrow>true</CanGrow>
+            <KeepTogether>true</KeepTogether>
+            <Paragraphs>
+              <Paragraph>
+                <TextRuns>
+                  <TextRun>
+                    <Value>=Split(First(Fields!durationText.Value, "reports_Certificate1ToExcel").ToString, Chr(10))(1)</Value>
+                    <Style>
+                      <FontStyle>Normal</FontStyle>
+                      <FontFamily>標楷體</FontFamily>
+                      <FontSize>16pt</FontSize>
+                      <FontWeight>Normal</FontWeight>
+                      <TextDecoration>None</TextDecoration>
+                      <Color>#000000</Color>
+                    </Style>
+                  </TextRun>
+                </TextRuns>
+                <Style>
+                  <TextAlign>Left</TextAlign>
+                </Style>
+              </Paragraph>
+            </Paragraphs>
+            <rd:DefaultName>Textbox5</rd:DefaultName>
+            <Top>10.40736cm</Top>
+            <Left>3.86cm</Left>
+            <Height>1.53625cm</Height>
+            <Width>10.61cm</Width>
+            <ZIndex>7</ZIndex>
+            <Style>
+              <Border>
+                <Style>None</Style>
+              </Border>
+              <VerticalAlign>Top</VerticalAlign>
+              <PaddingLeft>0.32cm</PaddingLeft>
+              <PaddingRight>0.32cm</PaddingRight>
+              <PaddingTop>0.13cm</PaddingTop>
+              <PaddingBottom>0.13cm</PaddingBottom>
+            </Style>
+          </Textbox>
         </ReportItems>
-        <Height>12.12cm</Height>
+        <Height>12.96625cm</Height>
         <Style />
       </Body>
       <Width>24.51999cm</Width>
@@ -433,6 +415,15 @@
       </DefaultValue>
       <Prompt>locale</Prompt>
     </ReportParameter>
+    <ReportParameter Name="reportDuration">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>1</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>reportDuration</Prompt>
+    </ReportParameter>
   </ReportParameters>
   <ReportParametersLayout>
     <GridLayoutDefinition>
@@ -448,6 +439,11 @@
           <ColumnIndex>1</ColumnIndex>
           <RowIndex>0</RowIndex>
           <ParameterName>locale</ParameterName>
+        </CellDefinition>
+        <CellDefinition>
+          <ColumnIndex>2</ColumnIndex>
+          <RowIndex>0</RowIndex>
+          <ParameterName>reportDuration</ParameterName>
         </CellDefinition>
       </CellDefinitions>
     </GridLayoutDefinition>
