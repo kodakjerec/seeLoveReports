@@ -1472,7 +1472,7 @@
                                   <Value>=Fields!MasterBonus.Value</Value>
                                   <Style>
                                     <FontFamily>Arial</FontFamily>
-                                    <Format>N0</Format>
+                                    <Format>0;(0);'-'</Format>
                                   </Style>
                                 </TextRun>
                               </TextRuns>
@@ -7437,7 +7437,7 @@
                                   <Value>=Sum(Fields!MasterBonus.Value)</Value>
                                   <Style>
                                     <FontFamily>Arial</FontFamily>
-                                    <Format>N0</Format>
+                                    <Format>0;(0);'-'</Format>
                                   </Style>
                                 </TextRun>
                               </TextRuns>
@@ -8194,20 +8194,11 @@
       </DefaultValue>
       <Prompt>End Date</Prompt>
     </ReportParameter>
-    <ReportParameter Name="DefaultProjectID">
-      <DataType>String</DataType>
-      <DefaultValue>
-        <Values>
-          <Value>R00001</Value>
-        </Values>
-      </DefaultValue>
-      <Prompt>Default Project ID</Prompt>
-    </ReportParameter>
     <ReportParameter Name="CompanyID">
       <DataType>String</DataType>
       <DefaultValue>
         <Values>
-          <Value>83799023</Value>
+          <Value>83603978</Value>
         </Values>
       </DefaultValue>
       <Prompt>Company ID</Prompt>
@@ -8250,11 +8241,6 @@
           <ColumnIndex>2</ColumnIndex>
           <RowIndex>0</RowIndex>
           <ParameterName>EndDate</ParameterName>
-        </CellDefinition>
-        <CellDefinition>
-          <ColumnIndex>3</ColumnIndex>
-          <RowIndex>0</RowIndex>
-          <ParameterName>DefaultProjectID</ParameterName>
         </CellDefinition>
         <CellDefinition>
           <ColumnIndex>0</ColumnIndex>
