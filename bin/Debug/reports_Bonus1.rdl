@@ -23,6 +23,10 @@
           <QueryParameter Name="@EndDate">
             <Value>=Parameters!EndDate.Value</Value>
           </QueryParameter>
+          <QueryParameter Name="@CompanyID">
+            <Value>=Parameters!CompanyID.Value</Value>
+            <rd:UserDefined>true</rd:UserDefined>
+          </QueryParameter>
         </QueryParameters>
         <CommandType>StoredProcedure</CommandType>
         <CommandText>reports_Bonus1</CommandText>
@@ -1056,7 +1060,7 @@
           <Border />
         </Style>
       </Body>
-      <Width>24.72796cm</Width>
+      <Width>24.72797cm</Width>
       <Page>
         <PageHeight>21cm</PageHeight>
         <PageWidth>29.7cm</PageWidth>
@@ -1097,6 +1101,10 @@
       </DefaultValue>
       <Prompt>End Date</Prompt>
     </ReportParameter>
+    <ReportParameter Name="CompanyID">
+      <DataType>String</DataType>
+      <Prompt>Company ID</Prompt>
+    </ReportParameter>
   </ReportParameters>
   <ReportParametersLayout>
     <GridLayoutDefinition>
@@ -1117,6 +1125,11 @@
           <ColumnIndex>2</ColumnIndex>
           <RowIndex>0</RowIndex>
           <ParameterName>EndDate</ParameterName>
+        </CellDefinition>
+        <CellDefinition>
+          <ColumnIndex>3</ColumnIndex>
+          <RowIndex>0</RowIndex>
+          <ParameterName>CompanyID</ParameterName>
         </CellDefinition>
       </CellDefinitions>
     </GridLayoutDefinition>

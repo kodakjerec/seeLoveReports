@@ -23,9 +23,6 @@
           <QueryParameter Name="@EndDate">
             <Value>=Parameters!EndDate.Value</Value>
           </QueryParameter>
-          <QueryParameter Name="@DefaultProjectID">
-            <Value>=Parameters!DefaultProjectID.Value</Value>
-          </QueryParameter>
           <QueryParameter Name="@CompanyID">
             <Value>=Parameters!CompanyID.Value</Value>
           </QueryParameter>
