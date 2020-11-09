@@ -36,8 +36,8 @@
           <DataField>Certificate1</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
-        <Field Name="CreateDate">
-          <DataField>CreateDate</DataField>
+        <Field Name="IssuanceDate">
+          <DataField>IssuanceDate</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
         <Field Name="StatusName">
@@ -168,7 +168,7 @@
               <Paragraph>
                 <TextRuns>
                   <TextRun>
-                    <Value>=First(Fields!CreateDate.Value, "reports_Certificate1ToExcel")</Value>
+                    <Value>=First(Fields!IssuanceDate.Value, "reports_Certificate1ToExcel")</Value>
                     <Style>
                       <FontFamily>微軟正黑體</FontFamily>
                       <FontSize>16pt</FontSize>
