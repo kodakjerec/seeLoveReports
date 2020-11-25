@@ -206,6 +206,10 @@
           <DataField>C_SecondaryBonus</DataField>
           <rd:TypeName>System.Decimal</rd:TypeName>
         </Field>
+        <Field Name="C_EmployeeBonus">
+          <DataField>C_EmployeeBonus</DataField>
+          <rd:TypeName>System.Decimal</rd:TypeName>
+        </Field>
         <Field Name="C_SelfBonus">
           <DataField>C_SelfBonus</DataField>
           <rd:TypeName>System.Decimal</rd:TypeName>
@@ -6143,10 +6147,10 @@
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>=Lookup(Fields!C_colID4.Value, Fields!CompanyID.Value, Fields!C_Percentage.Value, "reports_Bonus1_C")</Value>
+                                  <Value>=Lookup(Fields!C_colID4.Value, Fields!CompanyID.Value, Fields!C_CompanyBonus.Value, "reports_Bonus1_C")</Value>
                                   <Style>
                                     <FontFamily>標楷體</FontFamily>
-                                    <Format>'$'#,0;('$'#,0);'-'</Format>
+                                    <Format>'$' #,0;('$' #,0);'-'</Format>
                                   </Style>
                                 </TextRun>
                               </TextRuns>
@@ -6163,7 +6167,7 @@
                             <PaddingRight>2pt</PaddingRight>
                             <PaddingTop>2pt</PaddingTop>
                             <PaddingBottom>2pt</PaddingBottom>
-                            <rd:FormatSymbolCulture>zh-TW</rd:FormatSymbolCulture>
+                            <rd:FormatSymbolCulture>zh-SG</rd:FormatSymbolCulture>
                           </Style>
                         </Textbox>
                       </CellContents>
@@ -7241,6 +7245,7 @@
                             <PaddingRight>2pt</PaddingRight>
                             <PaddingTop>2pt</PaddingTop>
                             <PaddingBottom>2pt</PaddingBottom>
+                            <rd:FormatSymbolCulture>zh-SG</rd:FormatSymbolCulture>
                           </Style>
                         </Textbox>
                       </CellContents>
@@ -7767,7 +7772,7 @@
                             <PaddingRight>2pt</PaddingRight>
                             <PaddingTop>2pt</PaddingTop>
                             <PaddingBottom>2pt</PaddingBottom>
-                            <rd:FormatSymbolCulture>zh-TW</rd:FormatSymbolCulture>
+                            <rd:FormatSymbolCulture>zh-SG</rd:FormatSymbolCulture>
                           </Style>
                         </Textbox>
                       </CellContents>
@@ -8687,11 +8692,6 @@
                       <GroupExpression>=Fields!C_colName1.Value</GroupExpression>
                     </GroupExpressions>
                   </Group>
-                  <SortExpressions>
-                    <SortExpression>
-                      <Value>=Fields!C_colName1.Value</Value>
-                    </SortExpression>
-                  </SortExpressions>
                   <TablixHeader>
                     <Size>0.07938cm</Size>
                     <CellContents>
@@ -8730,11 +8730,6 @@
                           <GroupExpression>=Fields!C_colName2.Value</GroupExpression>
                         </GroupExpressions>
                       </Group>
-                      <SortExpressions>
-                        <SortExpression>
-                          <Value>=Fields!C_colName2.Value</Value>
-                        </SortExpression>
-                      </SortExpressions>
                       <TablixHeader>
                         <Size>0.07938cm</Size>
                         <CellContents>
@@ -8773,11 +8768,6 @@
                               <GroupExpression>=Fields!C_colName3.Value</GroupExpression>
                             </GroupExpressions>
                           </Group>
-                          <SortExpressions>
-                            <SortExpression>
-                              <Value>=Fields!C_colName3.Value</Value>
-                            </SortExpression>
-                          </SortExpressions>
                           <TablixHeader>
                             <Size>0.07938cm</Size>
                             <CellContents>
@@ -8816,11 +8806,6 @@
                                   <GroupExpression>=Fields!C_colName4.Value</GroupExpression>
                                 </GroupExpressions>
                               </Group>
-                              <SortExpressions>
-                                <SortExpression>
-                                  <Value>=Fields!C_colName4.Value</Value>
-                                </SortExpression>
-                              </SortExpressions>
                               <TablixHeader>
                                 <Size>0.07938cm</Size>
                                 <CellContents>
@@ -8859,11 +8844,6 @@
                                       <GroupExpression>=Fields!C_colName5.Value</GroupExpression>
                                     </GroupExpressions>
                                   </Group>
-                                  <SortExpressions>
-                                    <SortExpression>
-                                      <Value>=Fields!C_colName5.Value</Value>
-                                    </SortExpression>
-                                  </SortExpressions>
                                   <TablixHeader>
                                     <Size>0.07938cm</Size>
                                     <CellContents>
@@ -8902,11 +8882,6 @@
                                           <GroupExpression>=Fields!C_colName6.Value</GroupExpression>
                                         </GroupExpressions>
                                       </Group>
-                                      <SortExpressions>
-                                        <SortExpression>
-                                          <Value>=Fields!C_colName6.Value</Value>
-                                        </SortExpression>
-                                      </SortExpressions>
                                       <TablixHeader>
                                         <Size>0.07938cm</Size>
                                         <CellContents>
@@ -8945,11 +8920,6 @@
                                               <GroupExpression>=Fields!colName1.Value</GroupExpression>
                                             </GroupExpressions>
                                           </Group>
-                                          <SortExpressions>
-                                            <SortExpression>
-                                              <Value>=Fields!colName1.Value</Value>
-                                            </SortExpression>
-                                          </SortExpressions>
                                           <TablixHeader>
                                             <Size>0.07938cm</Size>
                                             <CellContents>
@@ -8988,11 +8958,6 @@
                                                   <GroupExpression>=Fields!colName2.Value</GroupExpression>
                                                 </GroupExpressions>
                                               </Group>
-                                              <SortExpressions>
-                                                <SortExpression>
-                                                  <Value>=Fields!colName2.Value</Value>
-                                                </SortExpression>
-                                              </SortExpressions>
                                               <TablixHeader>
                                                 <Size>0.07938cm</Size>
                                                 <CellContents>
@@ -9031,11 +8996,6 @@
                                                       <GroupExpression>=Fields!colName3.Value</GroupExpression>
                                                     </GroupExpressions>
                                                   </Group>
-                                                  <SortExpressions>
-                                                    <SortExpression>
-                                                      <Value>=Fields!colName3.Value</Value>
-                                                    </SortExpression>
-                                                  </SortExpressions>
                                                   <TablixHeader>
                                                     <Size>0.07938cm</Size>
                                                     <CellContents>
@@ -9074,11 +9034,6 @@
                                                           <GroupExpression>=Fields!colName4.Value</GroupExpression>
                                                         </GroupExpressions>
                                                       </Group>
-                                                      <SortExpressions>
-                                                        <SortExpression>
-                                                          <Value>=Fields!colID4.Value</Value>
-                                                        </SortExpression>
-                                                      </SortExpressions>
                                                       <TablixHeader>
                                                         <Size>0.07938cm</Size>
                                                         <CellContents>
@@ -9117,11 +9072,6 @@
                                                               <GroupExpression>=Fields!colName5.Value</GroupExpression>
                                                             </GroupExpressions>
                                                           </Group>
-                                                          <SortExpressions>
-                                                            <SortExpression>
-                                                              <Value>=Fields!colID5.Value</Value>
-                                                            </SortExpression>
-                                                          </SortExpressions>
                                                           <TablixHeader>
                                                             <Size>0.07938cm</Size>
                                                             <CellContents>
@@ -9160,11 +9110,6 @@
                                                                   <GroupExpression>=Fields!colName6.Value</GroupExpression>
                                                                 </GroupExpressions>
                                                               </Group>
-                                                              <SortExpressions>
-                                                                <SortExpression>
-                                                                  <Value>=Fields!colID6.Value</Value>
-                                                                </SortExpression>
-                                                              </SortExpressions>
                                                               <TablixHeader>
                                                                 <Size>0.07938cm</Size>
                                                                 <CellContents>

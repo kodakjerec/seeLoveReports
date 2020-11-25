@@ -6,13 +6,13 @@
     <ErrorLevel>2</ErrorLevel>
     <OverwriteDatasets>True</OverwriteDatasets>
     <OverwriteDataSources>True</OverwriteDataSources>
-    <TargetServerVersion>SSRS2016</TargetServerVersion>
+    <TargetServerVersion>SSRS2008R2</TargetServerVersion>
     <Platform>Win32</Platform>
     <TargetReportFolder>Reports</TargetReportFolder>
     <TargetDatasetFolder>Datasets</TargetDatasetFolder>
     <TargetDatasourceFolder>DataSources</TargetDatasourceFolder>
     <TargetReportPartFolder>ReportParts</TargetReportPartFolder>
-    <TargetServerURL>http://192.168.1.20:3002/ReportServer</TargetServerURL>
+    <TargetServerURL>http://misraid/ReportServer</TargetServerURL>
     <StartItem>reports_Employees.rdl</StartItem>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)' == 'DebugLocal' ">
@@ -51,9 +51,15 @@
   </PropertyGroup>
   <ItemGroup>
     <DataSource Include="192_168_1_210_seelove100.rds" />
+    <DataSource Include="192_168_1_21_cf100.rds" />
   </ItemGroup>
   <ItemGroup>
+    <Report Include="cf_Report_TombCheck_Available.rdl" />
+    <Report Include="cf_Report_TombCheck_Escrow.rdl" />
+    <Report Include="cf_Report_TombCheck_Invalid.rdl" />
+    <Report Include="cf_Report_TombCheck_Terminate.rdl" />
     <Report Include="reports_Bonus1.rdl" />
+    <Report Include="reports_Bonus1_Total.rdl" />
     <Report Include="reports_Bonus2.rdl" />
     <Report Include="reports_Certificate1ToExcel.rdl" />
     <Report Include="reports_Certificate2ToExcel.rdl" />
