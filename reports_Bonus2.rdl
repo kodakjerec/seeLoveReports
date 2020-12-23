@@ -4,7 +4,7 @@
   <AutoRefresh>0</AutoRefresh>
   <DataSources>
     <DataSource Name="AutoGen_192_168_1_210_seelove100">
-      <DataSourceReference>192_168_1_210_seelove100</DataSourceReference>
+      <DataSourceReference>seelove100</DataSourceReference>
       <rd:SecurityType>None</rd:SecurityType>
       <rd:DataSourceID>c60b9dad-36f7-44f8-bd44-dff12a75ec7b</rd:DataSourceID>
     </DataSource>

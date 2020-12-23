@@ -12,7 +12,7 @@
     <TargetDatasetFolder>Datasets</TargetDatasetFolder>
     <TargetDatasourceFolder>DataSources</TargetDatasourceFolder>
     <TargetReportPartFolder>ReportParts</TargetReportPartFolder>
-    <TargetServerURL>http://misraid/ReportServer</TargetServerURL>
+    <TargetServerURL>http://192.168.2.210:3002/ReportServer</TargetServerURL>
     <StartItem>reports_Employees.rdl</StartItem>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)' == 'DebugLocal' ">
@@ -50,8 +50,8 @@
     <Reports>@(Report)</Reports>
   </PropertyGroup>
   <ItemGroup>
-    <DataSource Include="192_168_1_210_seelove100.rds" />
     <DataSource Include="192_168_1_21_cf100.rds" />
+    <DataSource Include="seelove100.rds" />
   </ItemGroup>
   <ItemGroup>
     <Report Include="cf_Report_TombCheck_Available.rdl" />
@@ -64,6 +64,8 @@
     <Report Include="reports_Certificate1ToExcel.rdl" />
     <Report Include="reports_Certificate2ToExcel.rdl" />
     <Report Include="reports_Employees.rdl" />
+    <Report Include="reports_fk_FKOrderPrint.rdl" />
+    <Report Include="reports_fk_FKOrderRpt.rdl" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Reporting Services\Microsoft.ReportingServices.MSBuilder.targets" />
 </Project>
