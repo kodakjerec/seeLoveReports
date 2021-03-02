@@ -51,6 +51,7 @@
   </PropertyGroup>
   <ItemGroup>
     <DataSource Include="192_168_1_21_cf100.rds" />
+    <DataSource Include="gl100.rds" />
     <DataSource Include="seelove100.rds" />
   </ItemGroup>
   <ItemGroup>
@@ -58,7 +59,8 @@
     <Report Include="cf_Report_TombCheck_Escrow.rdl" />
     <Report Include="cf_Report_TombCheck_Invalid.rdl" />
     <Report Include="cf_Report_TombCheck_Terminate.rdl" />
-    <Report Include="reports_anza_Request.rdl" />
+    <Report Include="gl_Report_anza_Total.rdl" />
+    <Report Include="gl_Report_Bonus2.rdl" />
     <Report Include="reports_anza_Total.rdl" />
     <Report Include="reports_Bonus1.rdl" />
     <Report Include="reports_Bonus1_Total.rdl" />
