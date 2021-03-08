@@ -59,16 +59,15 @@
     <Report Include="cf_Report_TombCheck_Escrow.rdl" />
     <Report Include="cf_Report_TombCheck_Invalid.rdl" />
     <Report Include="cf_Report_TombCheck_Terminate.rdl" />
-    <Report Include="gl_Report_anza_Total.rdl" />
-    <Report Include="gl_Report_Bonus2.rdl" />
-    <Report Include="reports_anza_Total.rdl" />
     <Report Include="reports_Bonus1.rdl" />
     <Report Include="reports_Bonus1_Total.rdl" />
     <Report Include="reports_Bonus2.rdl" />
     <Report Include="reports_Certificate1ToExcel.rdl" />
     <Report Include="reports_Certificate2ToExcel.rdl" />
     <Report Include="reports_Employees.rdl" />
-    <Report Include="reports_order_exportWinton.rdl" />
+    <Report Include="reports_gl_anza_Total.rdl" />
+    <Report Include="reports_gl_Bonus2.rdl" />
+    <Report Include="reports_OrderExportWinton.rdl" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Reporting Services\Microsoft.ReportingServices.MSBuilder.targets" />
 </Project>

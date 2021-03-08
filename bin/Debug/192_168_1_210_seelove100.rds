@@ -1,8 +1,0 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<RptDataSource xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Name="192_168_1_210_seelove100">
-  <ConnectionProperties>
-    <Extension>SQL</Extension>
-    <ConnectString>Data Source=192.168.2.210;Initial Catalog=seelove100</ConnectString>
-  </ConnectionProperties>
-  <DataSourceID>e00e1b48-e58e-4a88-9960-b6c318ad8816</DataSourceID>
-</RptDataSource>

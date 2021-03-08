@@ -4,16 +4,16 @@
   <AutoRefresh>0</AutoRefresh>
   <InitialPageName>="尊龍御苑生基_銷售總表_"+FormatDateTime(Globals!ExecutionTime, DateFormat.ShortDate)</InitialPageName>
   <DataSources>
-    <DataSource Name="DataSource1">
+    <DataSource Name="gl100">
       <DataSourceReference>gl100</DataSourceReference>
       <rd:SecurityType>None</rd:SecurityType>
       <rd:DataSourceID>a00490dc-5a5d-4a46-bdac-652cd6171970</rd:DataSourceID>
     </DataSource>
   </DataSources>
   <DataSets>
-    <DataSet Name="reports_anza_Total">
+    <DataSet Name="reports_gl_anza_Total">
       <Query>
-        <DataSourceName>DataSource1</DataSourceName>
+        <DataSourceName>gl100</DataSourceName>
         <QueryParameters>
           <QueryParameter Name="@StartDate">
             <Value>=Parameters!StartDate.Value</Value>
@@ -35,7 +35,7 @@
           </QueryParameter>
         </QueryParameters>
         <CommandType>StoredProcedure</CommandType>
-        <CommandText>reports_anza_Total</CommandText>
+        <CommandText>reports_gl_anza_Total</CommandText>
       </Query>
       <Fields>
         <Field Name="OrderDate">
@@ -1984,7 +1984,7 @@
                 </TablixMember>
               </TablixMembers>
             </TablixRowHierarchy>
-            <DataSetName>reports_anza_Total</DataSetName>
+            <DataSetName>reports_gl_anza_Total</DataSetName>
             <Top>1.54199cm</Top>
             <Height>1.2cm</Height>
             <Width>57.2cm</Width>
