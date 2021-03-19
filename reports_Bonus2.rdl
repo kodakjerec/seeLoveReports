@@ -204,6 +204,28 @@
                       <FontWeight>Bold</FontWeight>
                     </Style>
                   </TextRun>
+                  <TextRun>
+                    <Value>期間: </Value>
+                    <Style />
+                  </TextRun>
+                  <TextRun>
+                    <Value>=Parameters!StartDate.Value</Value>
+                    <Style>
+                      <Format>yyyy/MM/dd</Format>
+                      <Calendar>Taiwan</Calendar>
+                    </Style>
+                  </TextRun>
+                  <TextRun>
+                    <Value> ~ </Value>
+                    <Style />
+                  </TextRun>
+                  <TextRun>
+                    <Value>=Parameters!EndDate.Value</Value>
+                    <Style>
+                      <Format>yyyy/MM/dd</Format>
+                      <Calendar>Taiwan</Calendar>
+                    </Style>
+                  </TextRun>
                 </TextRuns>
                 <Style>
                   <TextAlign>Center</TextAlign>
@@ -211,9 +233,8 @@
               </Paragraph>
             </Paragraphs>
             <rd:DefaultName>textbox1</rd:DefaultName>
-            <Left>0.1in</Left>
             <Height>0.43in</Height>
-            <Width>9.57708in</Width>
+            <Width>10.82677in</Width>
             <Style>
               <PaddingLeft>2pt</PaddingLeft>
               <PaddingRight>2pt</PaddingRight>
@@ -225,76 +246,76 @@
             <TablixBody>
               <TablixColumns>
                 <TablixColumn>
-                  <Width>1.84167cm</Width>
+                  <Width>2cm</Width>
                 </TablixColumn>
                 <TablixColumn>
-                  <Width>1.73cm</Width>
-                </TablixColumn>
-                <TablixColumn>
-                  <Width>1.45875cm</Width>
-                </TablixColumn>
-                <TablixColumn>
-                  <Width>1.45875cm</Width>
-                </TablixColumn>
-                <TablixColumn>
-                  <Width>1.16458cm</Width>
-                </TablixColumn>
-                <TablixColumn>
-                  <Width>1.8cm</Width>
-                </TablixColumn>
-                <TablixColumn>
-                  <Width>1.2cm</Width>
+                  <Width>2cm</Width>
                 </TablixColumn>
                 <TablixColumn>
                   <Width>1.5cm</Width>
                 </TablixColumn>
                 <TablixColumn>
-                  <Width>1.2cm</Width>
-                </TablixColumn>
-                <TablixColumn>
-                  <Width>1.9cm</Width>
-                </TablixColumn>
-                <TablixColumn>
-                  <Width>1.3cm</Width>
-                </TablixColumn>
-                <TablixColumn>
-                  <Width>0.9cm</Width>
+                  <Width>1.5cm</Width>
                 </TablixColumn>
                 <TablixColumn>
                   <Width>1.5cm</Width>
                 </TablixColumn>
                 <TablixColumn>
-                  <Width>1.3cm</Width>
-                </TablixColumn>
-                <TablixColumn>
-                  <Width>0.9cm</Width>
+                  <Width>2cm</Width>
                 </TablixColumn>
                 <TablixColumn>
                   <Width>1.5cm</Width>
                 </TablixColumn>
                 <TablixColumn>
-                  <Width>1.3cm</Width>
-                </TablixColumn>
-                <TablixColumn>
-                  <Width>0.9cm</Width>
+                  <Width>1.5cm</Width>
                 </TablixColumn>
                 <TablixColumn>
                   <Width>1.5cm</Width>
                 </TablixColumn>
                 <TablixColumn>
-                  <Width>1.3cm</Width>
-                </TablixColumn>
-                <TablixColumn>
-                  <Width>0.9cm</Width>
+                  <Width>2cm</Width>
                 </TablixColumn>
                 <TablixColumn>
                   <Width>1.5cm</Width>
                 </TablixColumn>
                 <TablixColumn>
-                  <Width>1.3cm</Width>
+                  <Width>1cm</Width>
                 </TablixColumn>
                 <TablixColumn>
-                  <Width>0.9cm</Width>
+                  <Width>1.5cm</Width>
+                </TablixColumn>
+                <TablixColumn>
+                  <Width>1.5cm</Width>
+                </TablixColumn>
+                <TablixColumn>
+                  <Width>1cm</Width>
+                </TablixColumn>
+                <TablixColumn>
+                  <Width>1.5cm</Width>
+                </TablixColumn>
+                <TablixColumn>
+                  <Width>1.5cm</Width>
+                </TablixColumn>
+                <TablixColumn>
+                  <Width>1cm</Width>
+                </TablixColumn>
+                <TablixColumn>
+                  <Width>1.5cm</Width>
+                </TablixColumn>
+                <TablixColumn>
+                  <Width>1.5cm</Width>
+                </TablixColumn>
+                <TablixColumn>
+                  <Width>1cm</Width>
+                </TablixColumn>
+                <TablixColumn>
+                  <Width>1.5cm</Width>
+                </TablixColumn>
+                <TablixColumn>
+                  <Width>1.5cm</Width>
+                </TablixColumn>
+                <TablixColumn>
+                  <Width>1cm</Width>
                 </TablixColumn>
                 <TablixColumn>
                   <Width>1.5cm</Width>
@@ -302,7 +323,7 @@
               </TablixColumns>
               <TablixRows>
                 <TablixRow>
-                  <Height>0.79315cm</Height>
+                  <Height>0.8cm</Height>
                   <TablixCells>
                     <TablixCell>
                       <CellContents>
@@ -951,6 +972,7 @@
                             <PaddingBottom>2pt</PaddingBottom>
                           </Style>
                         </Textbox>
+                        <rd:Selected>true</rd:Selected>
                       </CellContents>
                     </TablixCell>
                     <TablixCell>
@@ -8067,8 +8089,8 @@
               </SortExpression>
             </SortExpressions>
             <Top>1.0922cm</Top>
-            <Height>5.44234cm</Height>
-            <Width>33.75375cm</Width>
+            <Height>5.44919cm</Height>
+            <Width>37cm</Width>
             <ZIndex>1</ZIndex>
             <Style>
               <Border>
@@ -8076,59 +8098,11 @@
               </Border>
             </Style>
           </Tablix>
-          <Textbox Name="Textbox205">
-            <CanGrow>true</CanGrow>
-            <KeepTogether>true</KeepTogether>
-            <Paragraphs>
-              <Paragraph>
-                <TextRuns>
-                  <TextRun>
-                    <Value>期間: </Value>
-                    <Style />
-                  </TextRun>
-                  <TextRun>
-                    <Value>=Parameters!StartDate.Value</Value>
-                    <Style>
-                      <Format>yyyy/MM/dd</Format>
-                      <Calendar>Taiwan</Calendar>
-                    </Style>
-                  </TextRun>
-                  <TextRun>
-                    <Value> ~ </Value>
-                    <Style />
-                  </TextRun>
-                  <TextRun>
-                    <Value>=Parameters!EndDate.Value</Value>
-                    <Style>
-                      <Format>yyyy/MM/dd</Format>
-                      <Calendar>Taiwan</Calendar>
-                    </Style>
-                  </TextRun>
-                </TextRuns>
-                <Style />
-              </Paragraph>
-            </Paragraphs>
-            <rd:DefaultName>Textbox205</rd:DefaultName>
-            <Top>0.4922cm</Top>
-            <Left>24.61506cm</Left>
-            <Height>0.6cm</Height>
-            <Width>5.675cm</Width>
-            <ZIndex>2</ZIndex>
-            <Style>
-              <Border>
-                <Style>None</Style>
-              </Border>
-              <PaddingLeft>2pt</PaddingLeft>
-              <PaddingRight>2pt</PaddingRight>
-              <PaddingTop>2pt</PaddingTop>
-              <PaddingBottom>2pt</PaddingBottom>
-            </Style>
-          </Textbox>
         </ReportItems>
-        <Height>6.95787cm</Height>
+        <Height>6.54139cm</Height>
         <Style />
       </Body>
-      <Width>33.76813cm</Width>
+      <Width>37cm</Width>
       <Page>
         <PageHeight>21cm</PageHeight>
         <PageWidth>29.7cm</PageWidth>
