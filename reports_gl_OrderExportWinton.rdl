@@ -3,16 +3,16 @@
   <df:DefaultFontFamily>Segoe UI</df:DefaultFontFamily>
   <AutoRefresh>0</AutoRefresh>
   <DataSources>
-    <DataSource Name="seelove100">
-      <DataSourceReference>seelove100</DataSourceReference>
+    <DataSource Name="gl100">
+      <DataSourceReference>gl100</DataSourceReference>
       <rd:SecurityType>None</rd:SecurityType>
       <rd:DataSourceID>e925be07-3e5a-4fa5-a28a-cedcd98fe961</rd:DataSourceID>
     </DataSource>
   </DataSources>
   <DataSets>
-    <DataSet Name="reports_order_ExportWinton">
+    <DataSet Name="reports_gl_OrderExportWinton">
       <Query>
-        <DataSourceName>seelove100</DataSourceName>
+        <DataSourceName>gl100</DataSourceName>
         <QueryParameters>
           <QueryParameter Name="@StartDate">
             <Value>=Parameters!StartDate.Value</Value>
@@ -25,7 +25,7 @@
           </QueryParameter>
         </QueryParameters>
         <CommandType>StoredProcedure</CommandType>
-        <CommandText>reports_order_ExportWinton</CommandText>
+        <CommandText>reports_gl_OrderExportWinton</CommandText>
         <rd:UseGenericDesigner>true</rd:UseGenericDesigner>
       </Query>
       <Fields>
@@ -107,7 +107,7 @@
         </Field>
         <Field Name="付現金額_表頭_">
           <DataField>付現金額(表頭)</DataField>
-          <rd:TypeName>System.Decimal</rd:TypeName>
+          <rd:TypeName>System.String</rd:TypeName>
         </Field>
         <Field Name="刷卡金額_表頭_">
           <DataField>刷卡金額(表頭)</DataField>
@@ -115,11 +115,11 @@
         </Field>
         <Field Name="總含稅金額_表頭_">
           <DataField>總含稅金額(表頭)</DataField>
-          <rd:TypeName>System.Decimal</rd:TypeName>
+          <rd:TypeName>System.String</rd:TypeName>
         </Field>
         <Field Name="總稅額_表頭_">
           <DataField>總稅額(表頭)</DataField>
-          <rd:TypeName>System.Decimal</rd:TypeName>
+          <rd:TypeName>System.String</rd:TypeName>
         </Field>
         <Field Name="其他請款費用_表頭_">
           <DataField>其他請款費用(表頭)</DataField>
@@ -463,15 +463,15 @@
         </Field>
         <Field Name="結帳日期">
           <DataField>結帳日期</DataField>
-          <rd:TypeName>System.DateTime</rd:TypeName>
+          <rd:TypeName>System.String</rd:TypeName>
         </Field>
         <Field Name="收款日期">
           <DataField>收款日期</DataField>
-          <rd:TypeName>System.DateTime</rd:TypeName>
+          <rd:TypeName>System.String</rd:TypeName>
         </Field>
         <Field Name="對帳日期">
           <DataField>對帳日期</DataField>
-          <rd:TypeName>System.DateTime</rd:TypeName>
+          <rd:TypeName>System.String</rd:TypeName>
         </Field>
         <Field Name="指送地址">
           <DataField>指送地址</DataField>
@@ -2107,7 +2107,6 @@
                             <PaddingBottom>2pt</PaddingBottom>
                           </Style>
                         </Textbox>
-                        <rd:Selected>true</rd:Selected>
                       </CellContents>
                     </TablixCell>
                     <TablixCell>
@@ -8192,7 +8191,7 @@
                 </TablixMember>
               </TablixMembers>
             </TablixRowHierarchy>
-            <DataSetName>reports_order_ExportWinton</DataSetName>
+            <DataSetName>reports_gl_OrderExportWinton</DataSetName>
             <Height>0.5in</Height>
             <Width>113.4375in</Width>
             <Style>

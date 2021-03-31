@@ -10,7 +10,7 @@
     </DataSource>
   </DataSources>
   <DataSets>
-    <DataSet Name="reports_OrderExportMGear">
+    <DataSet Name="reports_gl_OrderExportMGear">
       <Query>
         <DataSourceName>gl100</DataSourceName>
         <QueryParameters>
@@ -19,7 +19,7 @@
           </QueryParameter>
         </QueryParameters>
         <CommandType>StoredProcedure</CommandType>
-        <CommandText>reports_OrderExportMGear</CommandText>
+        <CommandText>reports_gl_OrderExportMGear</CommandText>
         <rd:UseGenericDesigner>true</rd:UseGenericDesigner>
       </Query>
       <Fields>
@@ -492,7 +492,6 @@
                             <PaddingBottom>2pt</PaddingBottom>
                           </Style>
                         </Textbox>
-                        <rd:Selected>true</rd:Selected>
                       </CellContents>
                     </TablixCell>
                     <TablixCell>
@@ -842,7 +841,7 @@
                 </TablixMember>
               </TablixMembers>
             </TablixRowHierarchy>
-            <DataSetName>reports_OrderExportMGear</DataSetName>
+            <DataSetName>reports_gl_OrderExportMGear</DataSetName>
             <Height>0.5in</Height>
             <Width>11in</Width>
             <Style>

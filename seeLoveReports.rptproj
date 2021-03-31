@@ -67,8 +67,8 @@
     <Report Include="reports_Employees.rdl" />
     <Report Include="reports_gl_anza_Total.rdl" />
     <Report Include="reports_gl_Bonus2.rdl" />
-    <Report Include="reports_OrderExportMGear.rdl" />
-    <Report Include="reports_OrderExportWinton.rdl" />
+    <Report Include="reports_gl_OrderExportMGear.rdl" />
+    <Report Include="reports_gl_OrderExportWinton.rdl" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Reporting Services\Microsoft.ReportingServices.MSBuilder.targets" />
 </Project>
