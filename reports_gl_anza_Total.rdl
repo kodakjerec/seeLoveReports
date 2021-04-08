@@ -324,7 +324,7 @@
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>體系</Value>
+                                  <Value>代銷商</Value>
                                   <Style>
                                     <FontFamily>標楷體</FontFamily>
                                     <FontSize>12pt</FontSize>
@@ -359,7 +359,7 @@
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>業務員</Value>
+                                  <Value>業務代表</Value>
                                   <Style>
                                     <FontFamily>標楷體</FontFamily>
                                     <FontSize>12pt</FontSize>

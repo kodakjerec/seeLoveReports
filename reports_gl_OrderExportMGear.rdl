@@ -17,6 +17,9 @@
           <QueryParameter Name="@locale">
             <Value>=Parameters!locale.Value</Value>
           </QueryParameter>
+          <QueryParameter Name="@searchContent">
+            <Value>=Parameters!searchContent.Value</Value>
+          </QueryParameter>
         </QueryParameters>
         <CommandType>StoredProcedure</CommandType>
         <CommandText>reports_gl_OrderExportMGear</CommandText>
@@ -865,15 +868,6 @@
     </ReportSection>
   </ReportSections>
   <ReportParameters>
-    <ReportParameter Name="EndDate">
-      <DataType>DateTime</DataType>
-      <DefaultValue>
-        <Values>
-          <Value>07/22/2020 00:00:00</Value>
-        </Values>
-      </DefaultValue>
-      <Prompt>End Date</Prompt>
-    </ReportParameter>
     <ReportParameter Name="locale">
       <DataType>String</DataType>
       <DefaultValue>
@@ -883,21 +877,30 @@
       </DefaultValue>
       <Prompt>locale</Prompt>
     </ReportParameter>
+    <ReportParameter Name="searchContent">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>{"selectedOrdersType":[],"StartDate":"2020-01-01","EndDate":"2021-12-31","CompanyID":"12931704"}"</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>search Content</Prompt>
+    </ReportParameter>
   </ReportParameters>
   <ReportParametersLayout>
     <GridLayoutDefinition>
-      <NumberOfColumns>4</NumberOfColumns>
-      <NumberOfRows>2</NumberOfRows>
+      <NumberOfColumns>2</NumberOfColumns>
+      <NumberOfRows>1</NumberOfRows>
       <CellDefinitions>
+        <CellDefinition>
+          <ColumnIndex>0</ColumnIndex>
+          <RowIndex>0</RowIndex>
+          <ParameterName>locale</ParameterName>
+        </CellDefinition>
         <CellDefinition>
           <ColumnIndex>1</ColumnIndex>
           <RowIndex>0</RowIndex>
-          <ParameterName>EndDate</ParameterName>
-        </CellDefinition>
-        <CellDefinition>
-          <ColumnIndex>2</ColumnIndex>
-          <RowIndex>0</RowIndex>
-          <ParameterName>locale</ParameterName>
+          <ParameterName>searchContent</ParameterName>
         </CellDefinition>
       </CellDefinitions>
     </GridLayoutDefinition>
